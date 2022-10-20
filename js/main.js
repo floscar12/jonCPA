@@ -177,7 +177,7 @@ function initMap() {
     "<h6>Jonathon P. Reuben, CPA </h6>" +
     "<p>(310) 378-3609</p>" +
     "<p>23430 Hawthorne Blvd #290, Torrance, CA 90505</p>" +
-    "<a href='https://www.google.com/maps/dir//jonathon+p+reuen/@34.5971659,-119.2479826,9z/data=!3m1!5s0x80dd4b1ee4ffb67f:0xecd26fd9bd8492d9!4m8!4m7!1m0!1m5!1m1!1s0x80dd4b1ee51e5bc3:0xe2386bf8b8e5ebd3!2m2!1d-118.349959!2d33.8127716'><p>Get Directions</p></a>";
+    "<p><a href='https://www.google.com/maps/dir//jonathon+p+reuen/@34.5971659,-119.2479826,9z/data=!3m1!5s0x80dd4b1ee4ffb67f:0xecd26fd9bd8492d9!4m8!4m7!1m0!1m5!1m1!1s0x80dd4b1ee51e5bc3:0xe2386bf8b8e5ebd3!2m2!1d-118.349959!2d33.8127716'>Get Directions</a></p>";
 
   const infowindow = new google.maps.InfoWindow({
     content: markerInfo,
