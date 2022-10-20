@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/17a0eca914.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="images/brand.png"> </a>
+            <a class="navbar-brand" href="index.html"> Jonathon P. Reuben </a>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="services/tax-services.html">Tax Services</a></li>
+                            <li><a class="dropdown-item" href="services/audit.html">Auditing</a></li>
+                            <li><a class="dropdown-item" href="services/financial-consulting.html">Financial Consulting</a></li>
+                        </ul>
+                    </li>
+                    <a class="nav-link" href="#contact">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container">
+            <h1>Jonathon P. Reuben, CPA</h1>
+            <h2>An Accountancy Corporation</h2>
+
+            <p class="mt-4"><i class="fa-solid fa-phone"></i> (310) 378-3609</p>
+            <p><i class="fa-solid fa-location-dot"></i> 23430 Hawthorne Blvd #290, Torrance, CA 90505</p>     
+      
+            <a href="#contact"><button class="primary-btn">Contact Us</button></a>
+            <a href="#services"><button class="secondary-btn">View Services</button></a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h1>About Us</h1>
+
+            <div class="row">
+                <div class="col-md-8 order-md-first order-last">
+                    <p>At Jonathon P. Reuben, CPA, our core competency is providing our clients with accounting, tax and business advisory services. In addition, our goal is to build long-term, mutually beneficial partnerships with our clients.</p>
+                    <p>Founded in 1982, Jonathon P. Reuben, CPA, An Accountancy Corporation has been a valued business partner for clients for over 30 years.</p>                 
+                        
+                        <!-- 'read more' button content -->
+                        <div class="collapse" id="more-about">
+                            <p>Jonathon Reuben has widespread experience in tax services, auditing and financial consulting. His experience includes a broad range of industries with an emphasis on oil and gas, technology, medical services, wholesale distribution, consultancies, and services providers.</p>
+                            <p>Jonathon graduated from California State University, Northridge with a Bachelor of Science in Business Administration.</p>
+                            <p>He is a member of the American Institute of Certified Public Accountants as well as the Public Company Accounting Oversight Board.</p>
+                        </div>
+                        <button id="read-more-btn" class="primary-btn" type="button" data-bs-toggle="collapse" data-bs-target="#more-about" aria-expanded="false" aria-controls="more-about">
+                          Read More
+                        </button>
+                    
+                      
+                </div>
+
+                <div class="col-md-4 ">
+                    <img src="images/reuben.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <h1>Services</h1>
+            <p>Our firm offers a wide range of services to both individual and business clients:</p>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Tax Services
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>By keeping current on new tax laws and legislation, we are in a position to identify key tax planning opportunities that minimize both your current and future tax liabilities.</p>
+                                    <p>Tax services offered include but are not limited to: </p>
+                                    <ul>
+                                        <li>Corporations</li>
+                                        <li>Individuals</li>
+                                        <li>LLCs/LLPs</li>
+                                        <li>Estates, trusts and gifts</li>
+                                    </ul>
+                                    <a href="services/tax-services.html"><button class="service-btn">Read More</button></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Financial Consulting
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>We gauge our worth by the personal and business successes of our clients. </p>
+                                    <p>We can help your business identify areas negatively affecting profitability and growth and develop solutions that are practical and technically sound. In addition to acting as a sounding board for management, we provide comprehensive, flexible strategies that address the issues affecting your business.</p>
+                                    <a href="services/financial-consulting.html"><button class="service-btn">Read More</button></a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Auditing
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>We view our role in the financial reporting process as an opportunity to provide constructive solutions for maximizing your company’s profitability and efficiency. Audits differ from reviews and compilations, as they are an intensive examination of your company’s systems and records providing the highest level of assurance.</p>
+                                    <p>We provide financial reporting on all three levels of assurance:</p>
+                                    <ul>
+                                        <li> Audit- an intensive examination with the highest level of assurance </li>
+                                        <li> Review – some analytical procedures conducted with limited assurance </li>
+                                        <li> Compilation – based upon client information provided and used primarily for internal use </li>
+                                    </ul>
+                                    <a href="services/audit.html"><button class="service-btn">Read More</button></a>                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>Please fill out the form below to inquire about a service:</p>
+            </div>
+
+            <!-- Form -->
+            <form id="contact-form">
+                <label for="inputName" class="form-label">Name:</label>
+                <input class="form-control" id="inputName">
+        
+                <label for="inputEmail" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="inputEmail">
+                        
+                <label for="inputNumber" class="form-label">Phone Number:</label>
+                <input class="form-control" id="inputNumber">
+
+                <label for="inputMessage" class="form-label">Message:</label>
+                <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+
+                <button type="submit" class="mt-3 primary-btn">Send</button>
+            </form>
+        </div>
+    </section>
+  
+
+    <!-- Map -->
+    <div id="map">
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>© 2022 Jonathon P. Reuben</p>
+            
+            <p class="mt-4"> (310) 378-3609</p>
+            <p> 23430 Hawthorne Blvd #290, Torrance, CA 90505</p>     
+        
+        </div>
+    </footer>
+
+
+    
+    <!-- JS -->
+    <script src="main.js"></script>
+    <!-- Google Map API -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-PrSN_6rom3_F9H9397Pftcb6hmWF4js&callback=initMap"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

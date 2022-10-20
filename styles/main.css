@@ -1,0 +1,140 @@
+body {
+    font-family: 'Noto Serif Gujarati', serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section h1 {
+    color: #6d3944;
+}
+
+/* Hero */
+#hero {
+    padding-top: 175px;
+    padding-bottom: 90px;
+    background-image: url("../images/herobg.png");
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 55px;
+    color: white;
+}
+
+/* About */
+#about img {
+    max-width: 165px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: -30px;
+}
+
+#about p {
+    color: rgb(83, 83, 83);
+}
+
+/* Services */
+#services {
+    background-color: #f5f5f5;
+}
+
+
+.accordion-button:not(.collapsed) { /* accordion click color effect */
+    color: rgb(255, 255, 255);
+    background-color: #3b4968;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact-header{ 
+    text-align: center;
+}
+
+#contact-form {
+    box-shadow: 0px 4px 17px 0px rgb(135 137 138 / 16%);
+    max-width: 550px;
+    padding: 50px;
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+/* Map */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1e1e1ef7;
+    color: white;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+/* Custom Buttons */
+.primary-btn, .secondary-btn {
+    padding: 8px 15px;
+}
+
+.primary-btn {
+    background-color: #3d4c70;
+    border: 0.5px solid #2d3f61;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #2f3f63 ;
+}
+
+.secondary-btn {
+    background-color: white;
+    border: 0.5px solid #6d3642;
+    color: #532731;
+}
+
+.secondary-btn:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.service-btn {
+    padding: 5px 10px;
+    color: #2c3958;
+    border: 1px solid #3d4c70;
+    background-color: white;;
+}
+
+.service-btn:hover {
+    background-color: #2f436e;
+    color: white;
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 600px) {
+    #about,
+    #services {
+      text-align: center;
+    }
+
+    #about img {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+    .accordion {
+        text-align: start;
+    }
+  
+}
+  

@@ -1,0 +1,32 @@
+body {
+    font-family: 'Noto Serif Gujarati', serif;
+}
+
+/* Hero */
+#tax-services-hero, #financial-consult-hero, #audit-hero {
+    padding-top: 175px;
+    padding-bottom: 90px;
+    color: white;
+    text-align: center;
+}
+
+#tax-services-hero h1, #financial-consult-hero h1, #audit-hero h1 {
+    color: white;
+    font-size: 55px;
+}
+
+#tax-services-hero {
+    background-image: url("../images/tax-servicesbg.png");
+    background-position: center;
+}
+
+#financial-consult-hero {
+    background-image: url("../images/financial-consultbg.png");
+    background-position: center top;
+}
+
+#audit-hero {
+    background-image: url("../images/auditbg.png");
+    background-position: center bottom;
+}
+
