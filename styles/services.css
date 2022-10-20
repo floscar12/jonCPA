@@ -3,14 +3,14 @@ body {
 }
 
 /* Hero */
-#tax-services-hero, #financial-consult-hero, #audit-hero {
+.service-hero {
     padding-top: 175px;
     padding-bottom: 90px;
     color: white;
     text-align: center;
 }
 
-#tax-services-hero h1, #financial-consult-hero h1, #audit-hero h1 {
+.service-hero h1 {
     color: white;
     font-size: 55px;
 }

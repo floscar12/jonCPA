@@ -12,6 +12,10 @@ section h1 {
     color: #6d3944;
 }
 
+.custom-link {
+    color: white;
+}
+
 /* Hero */
 #hero {
     padding-top: 175px;
@@ -26,6 +30,7 @@ section h1 {
     font-size: 55px;
     color: white;
 }
+
 
 /* About */
 #about img {
@@ -78,7 +83,7 @@ label {
 footer {
     text-align: center;
     background-color: #1e1e1ef7;
-    color: white;
+    color: #7a7a7a;
     padding-top: 35px;
     padding-bottom: 25px;
 }
@@ -90,7 +95,7 @@ footer {
 
 .primary-btn {
     background-color: #3d4c70;
-    border: 0.5px solid #2d3f61;
+    border: 0.5px solid #374668;
     color: white;
 }
 
@@ -101,7 +106,7 @@ footer {
 .secondary-btn {
     background-color: white;
     border: 0.5px solid #6d3642;
-    color: #532731;
+    color: #6d3642;
 }
 
 .secondary-btn:hover {
