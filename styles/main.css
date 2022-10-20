@@ -4,8 +4,8 @@ body {
 }
 
 section {
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 55px;
+    padding-bottom: 55px;
 }
 
 section h1 {
@@ -18,7 +18,7 @@ section h1 {
 
 /* Hero */
 #hero {
-    padding-top: 175px;
+    padding-top: 205px;
     padding-bottom: 90px;
     background-image: url("../images/herobg.png");
     background-position: center center;
@@ -33,16 +33,17 @@ section h1 {
 
 
 /* About */
+
 #about img {
     max-width: 165px;
     border-radius: 50%;
     display: block;
     margin: auto;
-    margin-top: -15px;
+    margin-top: -5px;
 }
 
 #about p {
-    color: rgb(83, 83, 83);
+    color: rgb(99, 99, 99);
 }
 
 /* Services */
@@ -127,6 +128,10 @@ footer {
 
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {
+    #hero h1 {
+        font-size: 50px;
+    }
+
     #about,
     #services {
       text-align: center;

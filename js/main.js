@@ -207,3 +207,33 @@ function updateButton() {
     buttonClicked = true;
   }
 }
+
+
+// Offset Navbar height to smoothscroll
+const links = document.querySelectorAll(".nav-link");
+const contactUsButton = document.querySelector('.contactUsButton')
+const viewServicesButton = document.querySelector('.viewServicesButton')
+const navBarCollapse = document.querySelector('.navbar-collapse')
+
+for (const link of links) {
+  link.addEventListener("click", scrollToSection);
+}
+
+contactUsButton.addEventListener('click', scrollToSection)
+viewServicesButton.addEventListener('click', scrollToSection)
+
+function scrollToSection(e) {
+  console.log('hi')
+  e.preventDefault();
+  if (navBarCollapse.classList.contains('show')) {
+    navBarCollapse.classList.remove('show')
+  }
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+  const navbarHeight = document.querySelector(".navbar").offsetHeight
+
+  scroll({
+    top: offsetTop - navbarHeight,
+    behavior: "smooth"
+  });
+}
