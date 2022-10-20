@@ -210,21 +210,16 @@ function updateButton() {
 
 
 // Offset Navbar height to smoothscroll
-const links = document.querySelectorAll(".nav-link");
-const contactUsButton = document.querySelector('.contactUsButton')
-const viewServicesButton = document.querySelector('.viewServicesButton')
+const links = document.querySelectorAll(".scroll-effect"); // Grab all elements with scroll effect class
 const navBarCollapse = document.querySelector('.navbar-collapse')
 
 for (const link of links) {
   link.addEventListener("click", scrollToSection);
 }
 
-contactUsButton.addEventListener('click', scrollToSection)
-viewServicesButton.addEventListener('click', scrollToSection)
-
 function scrollToSection(e) {
-  console.log('hi')
   e.preventDefault();
+  // Collapse navbar on click
   if (navBarCollapse.classList.contains('show')) {
     navBarCollapse.classList.remove('show')
   }
