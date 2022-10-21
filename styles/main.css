@@ -111,6 +111,14 @@ footer {
     .accordion {
         text-align: start;
     }
+
+    .footer-links {
+        gap: 1em;
+    }
+
+    .footer-links p {
+        font-size: 12px;
+    }
 }
 
 /* Custom Buttons */
