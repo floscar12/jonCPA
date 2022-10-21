@@ -194,7 +194,7 @@ function initMap() {
 window.initMap = initMap;
 
 // 'Read More' button to 'Close' (vice versa) when clicked
-const readMore = document.getElementById("read-more-btn");
+const readMore = document.getElementById("read-more");
 readMore.addEventListener("click", updateButton);
 let buttonClicked = true;
 // if button clicked, change inner text
@@ -210,7 +210,7 @@ function updateButton() {
 
 
 // Offset Navbar height to smoothscroll
-const links = document.querySelectorAll(".scroll-effect"); // Grab all elements with scroll effect class
+const links = document.querySelectorAll(".scroll"); // Grab all elements with scroll effect class
 const navBarCollapse = document.querySelector('.navbar-collapse')
 
 for (const link of links) {

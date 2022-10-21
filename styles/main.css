@@ -1,29 +1,23 @@
 body {
     font-family: 'Noto Serif Gujarati', serif;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden; 
 }
 
 section {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding: 60px 0px 60px;
 }
 
 section h1 {
     color: #6d3944;
 }
 
-.custom-link {
-    color: white;
-}
-
 /* Hero */
 #hero {
-    padding-top: 205px;
-    padding-bottom: 90px;
+    color: white !important;
+    padding: 200px 0px 90px;
+    text-align: center;
     background-image: url("../images/herobg.png");
     background-position: center center;
-    color: white;
-    text-align: center;
 }
 
 #hero h1 {
@@ -31,9 +25,7 @@ section h1 {
     color: white;
 }
 
-
 /* About */
-
 #about img {
     max-width: 165px;
     border-radius: 50%;
@@ -43,14 +35,13 @@ section h1 {
 }
 
 #about p {
-    color: rgb(99, 99, 99);
+    color: rgb(75, 75, 75);
 }
 
 /* Services */
 #services {
     background-color: #f5f5f5;
 }
-
 
 .accordion-button:not(.collapsed) { /* accordion click color effect */
     color: rgb(255, 255, 255);
@@ -59,10 +50,6 @@ section h1 {
 }
 
 /* Contact */
-.contact-header{ 
-    text-align: center;
-}
-
 #contact-form {
     box-shadow: 0px 4px 17px 0px rgb(135 137 138 / 16%);
     max-width: 550px;
@@ -82,49 +69,28 @@ label {
 
 /* Footer */
 footer {
-    text-align: center;
-    background-color: #1e1e1ef7;
     color: #7a7a7a;
-    padding-top: 50px;
-    padding-bottom: 25px;
+    background-color: #1e1e1ef7;
+    text-align: center;
+    padding: 50px 0px 25px;
 }
 
-/* Custom Buttons */
-.primary-btn, .secondary-btn {
-    padding: 8px 15px;
+.footer-links {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
 }
 
-.primary-btn {
-    background-color: #3d4c70;
-    border: 0.5px solid #374668;
-    color: white;
+.footer-links a {
+    color: #7a7a7a;
+    text-decoration: none;
 }
 
-.primary-btn:hover {
-    background-color: #2f3f63 ;
+.footer-links a:hover {
+    color: rgb(92, 123, 209);
+    text-decoration: underline;
 }
 
-.secondary-btn {
-    background-color: white;
-    border: 0.5px solid #6d3642;
-    color: #6d3642;
-}
-
-.secondary-btn:hover {
-    background-color: rgb(236, 236, 236);
-}
-
-.service-btn {
-    padding: 5px 10px;
-    color: #2c3958;
-    border: 1px solid #3d4c70;
-    background-color: white;;
-}
-
-.service-btn:hover {
-    background-color: #2f436e;
-    color: white;
-}
 
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {
@@ -138,13 +104,49 @@ footer {
     }
 
     #about img {
-        margin-top: 0px;
+        margin-top: 15px;
         margin-bottom: 25px;
     }
 
     .accordion {
         text-align: start;
     }
-  
+}
+
+/* Custom Buttons */
+.blue-btn, .white-btn {
+    padding: 8px 15px;
+    border: 0.5px solid;
+}
+
+.blue-btn {
+    background-color: #3d4c70;
+    border-color: #374668;
+    color: white;
+}
+
+.blue-btn:hover {
+    background-color: #2f3f63 ;
+}
+
+.white-btn {
+    background-color: white;
+    border-color: #6d3642;
+    color: #6d3642;
+}
+
+.white-btn:hover {
+    background-color: #ececec;
+}
+
+.service-btn {
+    border: 1px solid #374668;
+    padding: 5px 10px;
+    background-color: white;
+    color: rgb(31, 31, 31);
+}
+
+.service-btn:hover {
+    background-color: rgb(241, 241, 241);
 }
   
